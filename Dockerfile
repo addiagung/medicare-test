@@ -1,10 +1,10 @@
-FROM python:3.11-slim
+FROM python:3.8
 
 WORKDIR /app
 
 COPY ./app
 
-RUN /bin/bash-c"source venv/bin/activate"
+RUN /bin/bash-c "source venv/bin/activate"
 
 RUN pip install Flask numpy Pillow pandas tensorflow
 
